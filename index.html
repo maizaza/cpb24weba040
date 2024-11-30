@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to My Profile</h1>
+    </header>
+    <div class="profile-container">
+        <img src="./asset/profile.jpg" alt="Profile Picture" class="profile-img">
+        <h2 id="name">SIWACH SAEOUNG</h2>
+        <p id="bio">STUDENT ID: 67130500040<br> STUDY AT: KMUTT SIT-IT</p>
+        <button onclick="changeTheme()">Toggle Theme</button>
+    </div>
+
+    <section class="social-links-section">
+        <h3>Find Me Online</h3>
+        <div class="social-links">
+            <a href="https://github.com/maizaza" target="_blank" class="social-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100004439599494" target="_blank" class="social-item">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/nongmaisaeoung/" target="_blank" class="social-item">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>Web Development</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-paint-brush"></i>
+                <span>Graphic Design</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-lightbulb"></i>
+                <span>Problem-Solving</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h3>Contact Me</h3>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="contact-name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="contact-email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="contact-message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Siwach Saeoung. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
